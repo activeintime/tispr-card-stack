@@ -64,17 +64,17 @@ public class TisprCardStackViewLayout: UICollectionViewLayout, UIGestureRecogniz
                 panGestureRecognizer = recognizer
                 panGestureRecognizer!.delegate = self
                 
-                swipeRecognizerDown = UISwipeGestureRecognizer(target: self, action:  Selector("handleSwipe:"))
-                swipeRecognizerDown!.direction = UISwipeGestureRecognizerDirection.Down
-                swipeRecognizerDown!.delegate = self
-                collectionView?.addGestureRecognizer(swipeRecognizerDown!)
-                swipeRecognizerDown!.requireGestureRecognizerToFail(panGestureRecognizer!)
-                
-                swipeRecognizerUp = UISwipeGestureRecognizer(target: self, action:  Selector("handleSwipe:"))
-                swipeRecognizerUp!.direction = UISwipeGestureRecognizerDirection.Up
-                swipeRecognizerUp!.delegate = self
-                collectionView?.addGestureRecognizer(swipeRecognizerUp!)
-                swipeRecognizerUp!.requireGestureRecognizerToFail(panGestureRecognizer!)
+//                swipeRecognizerDown = UISwipeGestureRecognizer(target: self, action:  Selector("handleSwipe:"))
+//                swipeRecognizerDown!.direction = UISwipeGestureRecognizerDirection.Down
+//                swipeRecognizerDown!.delegate = self
+//                collectionView?.addGestureRecognizer(swipeRecognizerDown!)
+//                swipeRecognizerDown!.requireGestureRecognizerToFail(panGestureRecognizer!)
+//                
+//                swipeRecognizerUp = UISwipeGestureRecognizer(target: self, action:  Selector("handleSwipe:"))
+//                swipeRecognizerUp!.direction = UISwipeGestureRecognizerDirection.Up
+//                swipeRecognizerUp!.delegate = self
+//                collectionView?.addGestureRecognizer(swipeRecognizerUp!)
+//                swipeRecognizerUp!.requireGestureRecognizerToFail(panGestureRecognizer!)
             } else {
                 if let recognizer = panGestureRecognizer {
                     collectionView?.removeGestureRecognizer(recognizer)
